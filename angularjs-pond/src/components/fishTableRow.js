@@ -9,6 +9,8 @@ angular.module('fish-pond')
   bindings: {
     fish: '<'
   },
+  //change each property "name","picture" and "description" and replace it
+  //by data from "fishes"
   controller: 'FishTableCtrl',
   template: `
     <div ng-click="$ctrl.toggleDescription()">
