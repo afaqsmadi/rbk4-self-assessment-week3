@@ -3,6 +3,7 @@ class FishTableRow extends React.Component {
     super();
     this.state = {
       showDescription: false
+      fishes=[]
     };
   }
 
@@ -10,11 +11,11 @@ class FishTableRow extends React.Component {
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Nemo</td>
+        <td className="fish-name">{fishes.name}</td>
         <td>
           <img src="http://tinyurl.com/h8o5szh" />
         </td>
-        {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
+        {this.state.showDescription ? <td className="fish-description">{fishes.description}?</td> : null}
       </tr>
     )
   }
@@ -29,3 +30,4 @@ FishTableRow.propTypes = {
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 window.FishTableRow = FishTableRow;
+}
