@@ -1,6 +1,6 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showDescription: false
     };
@@ -9,7 +9,7 @@ class FishTableRow extends React.Component {
   // Currently, the image being displayed is hardcoded from tinyurl.com 
   render() {
     return (
-      <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+      <tr onClick={() => this.setState({showDescription: !this.props.name)}>
         <td className="fish-name">Nemo</td>
         <td>
           <img src="http://tinyurl.com/h8o5szh" />
