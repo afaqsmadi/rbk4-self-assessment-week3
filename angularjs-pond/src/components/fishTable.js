@@ -3,6 +3,8 @@ angular.module('fish-pond')
   bindings: {
     fishes: '<'
   },
+
+  // same here 
   template: `
     <div>
       <fish-table-row></fish-table-row>

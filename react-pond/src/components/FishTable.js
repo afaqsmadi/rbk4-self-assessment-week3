@@ -1,4 +1,7 @@
 var FishTable = () => (
+
+	// i need to modify this to make it unfixed 
+	// also by looping through the data 
   <table>
     <tbody>
       <FishTableRow />
