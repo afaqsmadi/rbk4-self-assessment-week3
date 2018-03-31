@@ -5,7 +5,7 @@ angular.module('fish-pond')
   },
   template: `
     <div>
-      <fish-table-row></fish-table-row>
+      <fish-table-row fish=fishes></fish-table-row>
       <fish-table-row></fish-table-row>
       <fish-table-row></fish-table-row>
     </div>`
