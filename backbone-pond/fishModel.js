@@ -9,4 +9,8 @@ var Fish = Backbone.Model.extend({
     displayInfo: false
   }
 
+  var render= function(){
+  	".change"
+  }
+//i forgot the syntax
 });

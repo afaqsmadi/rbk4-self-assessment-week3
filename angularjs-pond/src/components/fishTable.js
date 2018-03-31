@@ -1,7 +1,7 @@
 angular.module('fish-pond')
 .component('fishTable', {
   bindings: {
-    fishes: '<'
+    fishes: '='
   },
   template: `
     <div>
