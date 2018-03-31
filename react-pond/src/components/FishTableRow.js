@@ -7,6 +7,8 @@ class FishTableRow extends React.Component {
   }
 
   // Currently, the image being displayed is hardcoded from tinyurl.com 
+
+  /*
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
@@ -19,6 +21,24 @@ class FishTableRow extends React.Component {
     )
   }
 }
+
+*/
+
+
+render() {
+    return (
+      <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
+        <td className="fish-name">{name}</td>
+        <td>
+          <img src="{image}" />
+        </td>
+        {this.state.showDescription ? <td className="fish-description">{description}</td> : null}
+      </tr>
+    )
+  }
+}
+
+
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
