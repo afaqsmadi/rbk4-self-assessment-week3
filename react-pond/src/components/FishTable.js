@@ -1,3 +1,5 @@
+//we need to use map , to modify and make the fishes dynamically
+	
 var FishTable = () => (
   <table>
     <tbody>
