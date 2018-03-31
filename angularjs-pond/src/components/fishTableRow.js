@@ -16,6 +16,6 @@ angular.module('fish-pond')
       <span>
         <img src="http://tinyurl.com/h8o5szh" />
       </span>
-      <span class="fish-description" ng-if="$ctrl.showDescription">Does anyone know where my dad is?</span>
+      <span class="fish-description" ng-if="$ctrl.showDescription" >ng-model="$ctrl.fish-description" {{'this.fish-data'}}</span>
     </div>`
 });
