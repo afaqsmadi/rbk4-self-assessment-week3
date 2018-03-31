@@ -1,6 +1,7 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    
+    super(props);
     this.state = {
       showDescription: false
     };
