@@ -19,3 +19,6 @@ angular.module('fish-pond')
       <span class="fish-description" ng-if="$ctrl.showDescription">Does anyone know where my dad is?</span>
     </div>`
 });
+
+/////////////I DON'T KNOW WHAT'S THE WRONG WITH WEEK 3 MATERIAL ????
+//////////// I CAN'T UNDERSTAND IT !!!!!!! 
