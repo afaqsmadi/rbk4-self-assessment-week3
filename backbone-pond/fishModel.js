@@ -9,4 +9,12 @@ var Fish = Backbone.Model.extend({
     displayInfo: false
   }
 
+
+  toggleDescription:function(){
+  	this.set("description",this.get("displayInfo")){
+     this.model.on("toggle:description",this);
+  	}
+  }
+  
+
 });
