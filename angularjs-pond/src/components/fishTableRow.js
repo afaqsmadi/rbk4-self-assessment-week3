@@ -3,6 +3,7 @@ angular.module('fish-pond')
   this.showDescription = false;
   this.toggleDescription = () => {
     this.showDescription = !this.showDescription;
+    this.fishes=fishData;
   };
 })
 .component('fishTableRow', {
