@@ -1,0 +1,8 @@
+
+    <div ng-click="$ctrl.toggleDescription()">
+      <span class="fish-name">{{$ctrl.fishes.name}}</span>
+      <span>
+        <img ng-src="{{$ctrl.fishes.image}}" />
+      </span>
+      <span class="fish-description" ng-if="$ctrl.showDescription">{{$ctrl.fishes.description}}</span>
+    </div>

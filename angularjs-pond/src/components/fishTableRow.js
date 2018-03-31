@@ -3,6 +3,7 @@ angular.module('fish-pond')
   this.showDescription = false;
   this.toggleDescription = () => {
     this.showDescription = !this.showDescription;
+    this.fishes=fishData;
   };
 })
 .component('fishTableRow', {
@@ -10,12 +11,5 @@ angular.module('fish-pond')
     fish: '<'
   },
   controller: 'FishTableCtrl',
-  template: `
-    <div ng-click="$ctrl.toggleDescription()">
-      <span class="fish-name">Nemo</span>
-      <span>
-        <img src="http://tinyurl.com/h8o5szh" />
-      </span>
-      <span class="fish-description" ng-if="$ctrl.showDescription">Does anyone know where my dad is?</span>
-    </div>`
+  templateUrl: `Templates/fishTableRow.html`
 });
