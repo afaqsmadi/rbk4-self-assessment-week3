@@ -34,6 +34,8 @@ After you complete each prompt, assign a grade to each item in the Grading Outli
 
 Grade | Meaning
 ---|---
+
+
 Complete             | You believe your solution to be fully complete and meeting the specified requirements.
 Mostly complete      | Your solution is well on its way to being complete, but you ran out of time or can't remember exactly how to do *one* particular aspect. You believe anyone who understands the problem well would endorse your solution as the right one, and know pretty clearly how to finish up any last touches.
 Significant progress | You have the right idea and were heading in a good direction. Covers everything between Mostly Complete and Attempted.
