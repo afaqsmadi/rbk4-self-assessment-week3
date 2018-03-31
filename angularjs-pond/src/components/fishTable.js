@@ -3,10 +3,14 @@ angular.module('fish-pond')
   bindings: {
     fishes: '<'
   },
+  
   template: `
     <div>
       <fish-table-row></fish-table-row>
       <fish-table-row></fish-table-row>
       <fish-table-row></fish-table-row>
-    </div>`
+    </div>
+    `
 });
+
+// i dont understand what mean render dynamiclly the code work so what we must do
