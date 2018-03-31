@@ -25,3 +25,4 @@ angular.module('fish-pond', [])
   },
   template: '<fish-table fishes="$ctrl.fishes"></fish-table>',
 });
+window.fishes=fishData;
