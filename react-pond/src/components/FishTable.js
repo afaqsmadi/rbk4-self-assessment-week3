@@ -17,3 +17,19 @@ FishTable.propTypes = {
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 window.FishTable = FishTable;
+
+
+//this is a pseudocode to explain the idea but i couldn't write it because I got confused
+// with those 3 frameworks and I'm mixing ideas between them 
+// var fishes=props;
+// 	var TableRow=fishes.map((fish)
+// 		var a='<li>'+fish.attributes+'</li>'
+// 			return a
+// 		);
+
+//   <table>
+//     <tbody>
+//      <TableRow/>
+      
+//     </tbody>
+//   </table>
