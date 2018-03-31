@@ -7,12 +7,14 @@ class FishTableRow extends React.Component {
   }
 
   // Currently, the image being displayed is hardcoded from tinyurl.com 
+  //change each property "name","picture" and "description" and replace it
+  //by data from "fishes"
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
         <td className="fish-name">Nemo</td>
         <td>
-          <img src="http://tinyurl.com/h8o5szh" />
+          <img src="http://tinyurl.com/h8o5szh" />"
         </td>
         {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
       </tr>
