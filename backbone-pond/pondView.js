@@ -13,5 +13,11 @@ var PondView = Backbone.View.extend({
   initialize: function() {
     this.render();
   }
+  ,
+  //here we make the method that when we click it will
+  //go to the middle and change the displayInfo to the opposite
+  toggleDescription:function(){
+    this.FishView.model.defaults.displayInfo = !this.defaults.displayInfo
+  }
   
 });

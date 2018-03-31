@@ -1,9 +1,11 @@
 angular.module('fish-pond')
-.controller('FishTableCtrl', function() {
+.controller('FishTableCtrl', function($window) {
   this.showDescription = false;
   this.toggleDescription = () => {
     this.showDescription = !this.showDescription;
   };
+  //here we add our json data
+  this.fishes = $window.fishData
 })
 .component('fishTableRow', {
   bindings: {
