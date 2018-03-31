@@ -19,3 +19,5 @@ angular.module('fish-pond')
       <span class="fish-description" ng-if="$ctrl.showDescription">Does anyone know where my dad is?</span>
     </div>`
 });
+
+// i dont understand what mean render dynamiclly the code work so what we must do
