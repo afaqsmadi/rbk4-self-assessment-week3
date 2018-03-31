@@ -1,9 +1,13 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+
+    {this.props.fishes.map(fish =>
+      <FishTableRow  fish={fish}/>
+
+
+      )}
+      
     </tbody>
   </table>
 );
@@ -17,3 +21,4 @@ FishTable.propTypes = {
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 window.FishTable = FishTable;
+
