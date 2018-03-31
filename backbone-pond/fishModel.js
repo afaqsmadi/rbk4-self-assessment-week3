@@ -11,7 +11,7 @@ var Fish = Backbone.Model.extend({
 
   toggleDescription : function(){
   	this.set('displayInfo',!(this.get('displayInfo')));
-  	this.defaults.displayInfo = true
+  	
   }
 
 });

@@ -8,6 +8,7 @@ var FishView = Backbone.View.extend({
   fishTemplateDetails: _.template('<td class="fish-name"><%=name%></td><td><img src="<%=image%>"></td><td class="fish-description"><%= description%></td>'),
   
   render: function() {
+    console.log("render")
     var fishTemplate = this.model.get('displayInfo') ? this.fishTemplateDetails : this.fishTemplateBasic;
     this.$el.html(fishTemplate(this.model.attributes));
     return this;
