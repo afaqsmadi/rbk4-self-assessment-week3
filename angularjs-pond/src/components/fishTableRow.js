@@ -7,10 +7,16 @@ angular.module('fish-pond')
 })
 .component('fishTableRow', {
   bindings: {
-    fish: '<'
+    fish: '='
   },
   controller: 'FishTableCtrl',
-  template: `
+  template:
+
+  //this div is hard coded  on the html page i need to change it to be not hard coded 
+  //by passing elements from the main.js page (name, url, discription)
+  // i need to loop through the fish data first 
+  // something like {{$ctrl.fish.name}}
+    `
     <div ng-click="$ctrl.toggleDescription()">
       <span class="fish-name">Nemo</span>
       <span>

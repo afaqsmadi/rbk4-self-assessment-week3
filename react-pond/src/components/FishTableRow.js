@@ -1,6 +1,6 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showDescription: false
     };
@@ -12,7 +12,10 @@ class FishTableRow extends React.Component {
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
         <td className="fish-name">Nemo</td>
         <td>
-          <img src="http://tinyurl.com/h8o5szh" />
+
+        ///// i need to modify it like this passing the props in the constructer 
+
+          <img src="{this.props.image}" />
         </td>
         {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
       </tr>
