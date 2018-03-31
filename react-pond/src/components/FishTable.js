@@ -1,12 +1,18 @@
-var FishTable = () => (
-  <table>
+var FishTable = () => {
+	//here we map for every fish 
+	var fishes = fishData.map((fish)=>
+
+  
+	return (
+		  <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+
+      <FishTableRow key={fish}> {fish} <FishTableRow/>
+
     </tbody>
   </table>
-);
+		)
+)};
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
