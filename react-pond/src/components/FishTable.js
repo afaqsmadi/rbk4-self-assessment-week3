@@ -1,9 +1,8 @@
 var FishTable = () => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      {fishes.map(fish)=>(<FishTableRow fish={fishData}/>
+      
     </tbody>
   </table>
 );
