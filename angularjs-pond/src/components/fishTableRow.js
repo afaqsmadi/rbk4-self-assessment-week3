@@ -9,13 +9,15 @@ angular.module('fish-pond')
   bindings: {
     fish: '<'
   },
+
   controller: 'FishTableCtrl',
   template: `
     <div ng-click="$ctrl.toggleDescription()">
-      <span class="fish-name">Nemo</span>
-      <span>
-        <img src="http://tinyurl.com/h8o5szh" />
-      </span>
-      <span class="fish-description" ng-if="$ctrl.showDescription">Does anyone know where my dad is?</span>
+      <span class="fish-name" ng-repeat="name in fish">{{name}}</span>
+      <span ng-repeat="image in fish">
+        <img ng-src={{image}} />
+      </span>  
+      <span class="fish-description ng-repeat="description in fish"" ng-if="$ctrl.showDescription">{{description}}</span>
     </div>`
 });
+
