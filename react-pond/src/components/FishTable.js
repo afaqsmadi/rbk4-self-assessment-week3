@@ -2,8 +2,7 @@ var FishTable = () => (
   <table>
     <tbody>
       <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      // i wanna to iterate element using map function here
     </tbody>
   </table>
 );
