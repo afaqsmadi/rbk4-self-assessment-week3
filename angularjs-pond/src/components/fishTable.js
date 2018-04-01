@@ -3,10 +3,16 @@ angular.module('fish-pond')
   bindings: {
     fishes: '<'
   },
+
+
   template: `
     <div>
-      <fish-table-row></fish-table-row>
-      <fish-table-row></fish-table-row>
-      <fish-table-row></fish-table-row>
+      <fish-table-row 
+      ng-reapeat="fish in &ctrl.fishes" fish={fish}>
+           {{fish}}
+      </fish-table-row>
+     
     </div>`
+
+
 });
