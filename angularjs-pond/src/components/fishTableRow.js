@@ -7,7 +7,7 @@ angular.module('fish-pond')
 })
 .component('fishTableRow', {
   bindings: {
-    fish: '<'
+    fish: '='
   },
   controller: 'FishTableCtrl',
   template: `

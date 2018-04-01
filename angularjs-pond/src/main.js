@@ -23,5 +23,6 @@ angular.module('fish-pond', [])
   controller: function() {
     this.fishes = fishData;
   },
-  template: '<fish-table fishes="$ctrl.fishes"></fish-table>',
+  template: `'<fish-table fishes="$ctrl.fishes"></fish-table>'
+            '<fish-table-row fish="$ctrl.fish"></fish-table-row>'`
 });
