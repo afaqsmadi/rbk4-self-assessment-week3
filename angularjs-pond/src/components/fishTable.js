@@ -1,12 +1,13 @@
 angular.module('fish-pond')
-.component('fishTable', {
-  bindings: {
+.component('fishTable', 
+{
+  bindings: 
+  {
     fishes: '<'
   },
+
   template: `
-    <div>
-      <fish-table-row></fish-table-row>
-      <fish-table-row></fish-table-row>
-      <fish-table-row></fish-table-row>
+    <div ng-repeat="fish in $ctrl.fishes">
+      <fish-table-row fish="fish"></fish-table-row>
     </div>`
 });
