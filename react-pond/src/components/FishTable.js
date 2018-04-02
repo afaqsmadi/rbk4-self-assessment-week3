@@ -1,9 +1,15 @@
 var FishTable = () => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+//      <FishTableRow />
+//      <FishTableRow />
+//      <FishTableRow />
+// to make dynamically render the passed in `fishData` i need to make map
+		{fishes.map((fish)=>{
+          return(
+           <FishTableRow fish={fish}/>
+          )
+        })}
     </tbody>
   </table>
 );

@@ -4,7 +4,7 @@
 
 Assessments are meant to give you and Hack Reactor staff an idea of how well you understand, or can figure out, the material that you covered recently.
 
-- Turn off all communication devices such as your phone, email, Slack, etc.
+- Turn off all communication d      evices such as your phone, email, Slack, etc.
 - Fork this repo and clone down your fork to your laptop.
 - Commit **working** code early and often (at least after every prompt). You are graded on your commit messages in addition to the code that you write
 

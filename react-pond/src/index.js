@@ -22,3 +22,4 @@ ReactDOM.render(
   <FishTable fishes={fishData}/>,
   document.getElementById('app')
 );
+//in this pass the array to fishtabel

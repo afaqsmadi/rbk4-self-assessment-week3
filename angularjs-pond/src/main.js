@@ -1,5 +1,5 @@
 //DO NOT MODIFY THIS FILE
-
+//this is array of object call json
 var fishData = [
   {
     name: 'Goldfish',
@@ -21,7 +21,8 @@ var fishData = [
 angular.module('fish-pond', [])
 .component('app', {
   controller: function() {
-    this.fishes = fishData;
+    this.fishes = fishData; //define array in app
   },
-  template: '<fish-table fishes="$ctrl.fishes"></fish-table>',
+  template: '<fish-table fishes="$ctrl.fishes"></fish-table>' 
+//pass the array to the app template
 });
