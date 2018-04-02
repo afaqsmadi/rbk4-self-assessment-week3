@@ -1,4 +1,4 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
     <tbody>
       <FishTableRow />
